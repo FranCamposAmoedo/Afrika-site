@@ -1,0 +1,43 @@
+/* Cómo el Header es Fixed hay que agregarle un padding top a la foto para que no la pise */
+#inicio {
+    padding-top: 85px;
+
+    /* Para que el carousel se achique un poco y se pueda ver mejor */
+    #carouselExampleCaptions {
+        .carousel-inner {
+            .carousel-item {
+                img {
+                    width: 80%;
+                    margin: 0 auto;
+                }
+            }
+        }
+
+        .boton-desliza {
+            width: 30%;
+        }
+    }
+
+    /* El querry para MObile */
+    @media screen and (max-width: 576px) {
+        padding-top: 0px;
+    }
+
+    /* Para que el carousel ocupe toda la pantalla en Mobile y Tablet*/
+    @media screen and (max-width: 996px) {
+        #carouselExampleCaptions {
+            .carousel-inner {
+                .carousel-item {
+                    img {
+                        margin: 0;
+                        width: 100%;
+                    }
+                }
+            }
+
+            .boton-desliza {
+                width: 15%;
+            }
+        }
+    }
+}

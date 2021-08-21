@@ -1,0 +1,11 @@
+/* Para simplificar cuando aparecen juntos */
+@mixin parametros-display ($align) {
+    display: flex;
+    justify-content: $align;
+}
+
+/* Dos parametros que aparecen casi siempre juntos */
+@mixin parametros-font-color ($color, $font) {
+    color: $color;
+    font-family: $font;
+}

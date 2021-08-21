@@ -1,0 +1,43 @@
+
+/* El título de acerca de nosotros */
+#nosotros h3 {
+    @extend %font-h3;
+}
+
+/* La caja que contiene la imagen y el párrafo */
+.contenedor-nosotros {
+    width: map-get($posicion-relativa , ancho);
+    height: map-get($posicion-relativa , alto);
+    position: map-get($posicion-relativa , posicion);
+
+    /* El tamaño y la transparencia de la imagen */
+    img {
+        position: map-get($posicion-absoluta , posicion);
+        width: map-get($posicion-absoluta , ancho);
+        height: map-get($posicion-absoluta , alto);
+        opacity: map-get($posicion-absoluta , opacidad);
+    }
+
+    /* El estilo, la tipografía y la ubicación del texto */
+    .parrafo-nosotros {
+        @include parametros-font-color (nth($color-list , 3), nth($font-list , 3));
+        position: map-get($posicion-absoluta , posicion);
+        font-style: map-get($posicion-absoluta , estilo);
+        text-align: map-get($posicion-absoluta , align);
+        font-size: map-get($posicion-absoluta, size);
+        padding: 40px 70px 60px 70px;
+        text-shadow: 2px 1px nth($color-list , 2);
+
+        /* Mobile */
+        @media screen and (max-width: 576px) {
+            padding: 10px 15px;
+            font-size: 0.8rem;
+        }
+
+        /* Tablet */
+        @media screen and (min-width: 576px) and (max-width: 992px) {
+            padding: 60px 40px;
+            font-size: 0.85rem;
+        }
+    }
+}
