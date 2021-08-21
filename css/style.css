@@ -323,6 +323,13 @@ header .dropdown .menu-indice .dropdown-item:hover {
   /* Mobile */
   /* Tablet */
 }
+.contenedor-nosotros .parrafo-nosotros a {
+  text-decoration: none;
+  color: #FF3B3F;
+}
+.contenedor-nosotros .parrafo-nosotros a:hover {
+  color: white;
+}
 @media screen and (max-width: 576px) {
   .contenedor-nosotros .parrafo-nosotros {
     padding: 10px 15px;
