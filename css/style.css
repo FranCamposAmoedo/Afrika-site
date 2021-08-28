@@ -140,7 +140,8 @@ header .dropdown .menu-indice .dropdown-item:hover {
 #inicio {
   padding-top: 95px;
   /* Para que el carousel se achique un poco y se pueda ver mejor */
-  /* El querry para MObile */
+  /* El querry para Mobile */
+  /* El querry para Tablet */
   /* Para que el carousel ocupe toda la pantalla en Mobile y Tablet*/
 }
 #inicio #carouselExampleCaptions .carousel-inner .carousel-item img {
@@ -151,12 +152,27 @@ header .dropdown .menu-indice .dropdown-item:hover {
   font-family: "Montserrat", sans-serif;
   text-shadow: 2px 1px black;
 }
+#inicio #carouselExampleCaptions .carousel-inner .carousel-item div p a {
+  text-decoration: none;
+  font-size: 1.2rem;
+  color: #FF3B3F;
+  background-color: white;
+}
+#inicio #carouselExampleCaptions .carousel-inner .carousel-item div p a:hover {
+  color: white;
+  background-color: #FF3B3F;
+}
 #inicio #carouselExampleCaptions .boton-desliza {
   width: 30%;
 }
 @media screen and (max-width: 576px) {
   #inicio {
     padding-top: 0px;
+  }
+}
+@media screen and (min-width: 576px) and (max-width: 996px) {
+  #inicio {
+    padding-top: 85px;
   }
 }
 @media screen and (max-width: 996px) {
