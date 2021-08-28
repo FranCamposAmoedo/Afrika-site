@@ -138,7 +138,7 @@ header .dropdown .menu-indice .dropdown-item:hover {
 
 /* Cómo el Header es Fixed hay que agregarle un padding top a la foto para que no la pise */
 #inicio {
-  padding-top: 85px;
+  padding-top: 95px;
   /* Para que el carousel se achique un poco y se pueda ver mejor */
   /* El querry para MObile */
   /* Para que el carousel ocupe toda la pantalla en Mobile y Tablet*/
@@ -146,6 +146,10 @@ header .dropdown .menu-indice .dropdown-item:hover {
 #inicio #carouselExampleCaptions .carousel-inner .carousel-item img {
   width: 80%;
   margin: 0 auto;
+}
+#inicio #carouselExampleCaptions .carousel-inner .carousel-item div {
+  font-family: "Montserrat", sans-serif;
+  text-shadow: 2px 1px black;
 }
 #inicio #carouselExampleCaptions .boton-desliza {
   width: 30%;
@@ -165,24 +169,26 @@ header .dropdown .menu-indice .dropdown-item:hover {
   }
 }
 
-/* Un margin para el video */
-.video-conciencia {
+.video-parrafo {
+  background-color: #EAEDED;
+  margin: 10px 0;
+  /* Un margin para el video */
+  /* El tamaño, la tipografía y el padding del párrafo que va al lado del vídeo */
+}
+.video-parrafo .video-conciencia {
   margin: 30px 0px;
   /* Redondeo de bordes y color del border */
 }
-.video-conciencia video {
-  border-radius: 60px;
-  border: 6px solid rgba(255, 59, 63, 0.9);
+.video-parrafo .video-conciencia video {
+  border-radius: 20px;
   /* Mobile */
 }
 @media screen and (max-width: 576px) and (max-width: 992px) {
-  .video-conciencia video {
+  .video-parrafo .video-conciencia video {
     width: 100%;
   }
 }
-
-/* El tamaño, la tipografía y el padding del párrafo que va al lado del vídeo */
-.link-conciencia {
+.video-parrafo .link-conciencia {
   width: 40%;
   font-family: "Roboto", sans-serif;
   justify-content: center;
@@ -193,38 +199,38 @@ header .dropdown .menu-indice .dropdown-item:hover {
   /* Mobile */
   /* Tablet */
 }
-.link-conciencia a {
+.video-parrafo .link-conciencia a {
   display: flex;
   justify-content: center;
   text-align: center;
-  color: black;
+  color: #FF3B3F;
   font-family: "Roboto", sans-serif;
   text-decoration: none;
   margin: 20px 0;
   font-size: 1.5rem;
   letter-spacing: 3px;
-  border: 1px solid black;
+  border: 1px solid #FF3B3F;
   border-radius: 10px;
   transition: all 0.3s ease-in-out;
   /* Al pasar el mouse sobre el link cambia de color */
 }
-.link-conciencia a:hover {
+.video-parrafo .link-conciencia a:hover {
   background-color: #FF3B3F;
   color: white;
   font-size: 1.6rem;
 }
-.link-conciencia p {
+.video-parrafo .link-conciencia p {
   text-align: justify;
 }
 @media screen and (max-width: 576px) {
-  .link-conciencia {
+  .video-parrafo .link-conciencia {
     width: 100%;
     padding: 0 40px;
     font-size: 1rem;
   }
 }
 @media screen and (min-width: 576px) and (max-width: 992px) {
-  .link-conciencia {
+  .video-parrafo .link-conciencia {
     width: 100%;
     padding: 0 80px;
     font-size: 1rem;
