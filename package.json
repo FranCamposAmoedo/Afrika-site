@@ -1,11 +1,24 @@
 {
-  "name": "desafio-clase-11",
+  "name": "poyecto",
   "version": "1.0.0",
+  "description": "<h1 align=\"center\">Hi 👋, I'm Francisco Campos Amoedo</h1>\r <h3 align=\"center\">A passionate frontend student from Argentina</h3>",
   "main": "index.js",
+  "dependencies": {
+    "aos": "^2.3.4",
+    "animate.css": "^4.1.1"
+  },
+  "devDependencies": {},
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/FranCamposAmoedo/Afrika-site.git"
+  },
   "author": "",
   "license": "ISC",
-  "description": ""
+  "bugs": {
+    "url": "https://github.com/FranCamposAmoedo/Afrika-site/issues"
+  },
+  "homepage": "https://github.com/FranCamposAmoedo/Afrika-site#readme"
 }
