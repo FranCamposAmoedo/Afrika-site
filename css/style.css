@@ -85,6 +85,7 @@ header {
   width: 100%;
   top: 0;
   position: fixed;
+  box-shadow: 1px 1px 5px 0 rgba(0, 0, 0, 0.5);
   z-index: 99999;
   /* El tamaño, la posición del logo */
   /* La tipografía, el estilo del título del header y una animación */
@@ -263,6 +264,10 @@ header .dropdown .menu-indice .dropdown-item:hover {
   }
 }
 /* El título de más vendidos */
+.mas-vendidos h3 {
+  margin-top: 20px;
+}
+
 /* El orden de los productos y la disposición de los productos */
 .mas-vendidos .best-sellers {
   display: flex;
@@ -276,9 +281,10 @@ header .dropdown .menu-indice .dropdown-item:hover {
   justify-content: space-evenly;
   align-items: center;
   border: 0.8px solid white;
-  border-radius: 12px;
-  padding: 10px;
+  border-radius: 8px;
+  padding: 10px 10px 2px 10px;
   transition: all 0.2s ease-in-out;
+  box-shadow: 1px 1px 5px 0 rgba(0, 0, 0, 0.5);
   /* Para sacarle el subrayado y el azul a los links */
   /* Para que cambie de color al pasar el mouse por encima y se escale */
   /* Mobile */
@@ -293,12 +299,12 @@ header .dropdown .menu-indice .dropdown-item:hover {
 .mas-vendidos .best-sellers .productos a .imagen {
   width: 200px;
   height: 170px;
-  background-color: rgba(130, 130, 130, 0.2);
   border-radius: 12px 12px 0 0;
 }
 .mas-vendidos .best-sellers .productos a p {
   color: black;
   font-family: "Source Sans Pro", sans-serif;
+  margin-top: 1.2rem;
   text-align: center;
   font-size: 0.8rem;
 }
