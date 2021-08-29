@@ -1,14 +1,12 @@
 /* El título de más vendidos */
-.mas-vendidos h3 {
-    margin-top: 20px;
-    @extend %font-h3;
+.mas-vendidos h2 {
+    @extend %font-h2;
 }
 
 /* El orden de los productos y la disposición de los productos */
 .mas-vendidos .best-sellers {
     @include parametros-display (space-evenly);
     flex-wrap: wrap;
-    margin: 15px;
 
     /* El borde, el background, el padding de cada producto y una transición */
     .productos {
@@ -16,28 +14,10 @@
         align-items: center;
         border: 0.8px solid nth($color-list, 4);
         border-radius: 8px;
-        padding: 10px 10px 2px 10px;
+        margin: 10px 0;
+        padding: 5px 10px 2px 10px;
         transition: all 0.2s ease-in-out;
         box-shadow: 1px 1px 5px 0 rgb(0 0 0 / 50%);
-
-        @keyframes fadeInUp {
-            from {
-                opacity: 0;
-                -webkit-transform: translate3d(0, 100%, 0);
-                transform: translate3d(0, 100%, 0);
-            }
-    
-            to {
-                opacity: 1;
-                -webkit-transform: translate3d(0, 0, 0);
-                transform: translate3d(0, 0, 0);
-            }
-        }
-    
-        .animate__fadeInUp {
-            -webkit-animation-name: fadeInUp;
-            animation-name: fadeInUp;
-        }
 
         /* Para sacarle el subrayado y el azul a los links */
         a {

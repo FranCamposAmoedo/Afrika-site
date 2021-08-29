@@ -1,6 +1,8 @@
 /* Fondo del footer con gradiente lineal */
 footer {
-    background-color: nth($color-list , 6);
+    background-color: nth($color-list, 6);
+    border: $borde-normal;
+    box-shadow: 1px -1px 5px 0 rgb(0 0 0 / 50%);
 
     /* Ubicación de Logo, Redes y Contacto */
     .menu-redes {
@@ -36,7 +38,8 @@ footer {
         .redes {
             @include parametros-display (space-evenly);
             padding-top: 15px;
-            padding-right: 200px;
+            padding-left: 0;
+            padding-right: auto;
             flex-grow: 1;
 
             /* El "relleno" de los links, para que el hover quede más prolijo y para espaciarlos entre sí */
@@ -63,7 +66,8 @@ footer {
             /* Tablet */
             @media screen and (min-width: 576px) and (max-width: 992px) {
                 padding-top: 15px;
-                padding-left: 20px;
+                padding-left: 15px;
+                width: 50px;
                 padding-right: unset;
                 display: flex;
                 flex-direction: column;
@@ -79,6 +83,7 @@ footer {
             text-align: right;
             padding-right: 15px;
             padding-top: 15px;
+            padding-left: 0;
 
             /* Cuando se pasa el cursor por encima de contacto */
             a {

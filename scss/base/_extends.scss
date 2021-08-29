@@ -1,15 +1,16 @@
 /* Propiedades que se repiten en los dos H3 */
-%font-h3 {
-    height: 100px;
+%font-h2 {
+    height: 80px;
     color: nth($color-list, 1);
     font-family: nth($font-list, 1);
     font-size: 1.75rem;
     text-align: center;
     vertical-align: center;
-    padding-top: 20px;
+    padding: 20px 0;
     font-weight: 700;
     word-spacing: 5px;
     letter-spacing: 1px;
+    text-shadow: 2px 1px nth($color-list , 2);
 }
 
 /* Propiedades que se repiten en las background-image de los productos */

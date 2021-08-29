@@ -28,17 +28,18 @@ html {
 /* Lista de Paleta de Colores */
 /* Lista de Fuentes */
 /* Propiedades que se repiten en los dos H3 */
-#nosotros h3, .mas-vendidos h3 {
-  height: 100px;
+.contenedor-nosotros h2, .mas-vendidos h2 {
+  height: 80px;
   color: #FF3B3F;
   font-family: "Montserrat", sans-serif;
   font-size: 1.75rem;
   text-align: center;
   vertical-align: center;
-  padding-top: 20px;
+  padding: 20px 0;
   font-weight: 700;
   word-spacing: 5px;
   letter-spacing: 1px;
+  text-shadow: 2px 1px #828282;
 }
 
 /* Propiedades que se repiten en las background-image de los productos */
@@ -223,6 +224,7 @@ header .dropdown .menu-indice .dropdown-item:hover {
   color: #FF3B3F;
   font-family: "Roboto", sans-serif;
   text-decoration: none;
+  text-shadow: 2px 1px #828282;
   margin: 20px 0;
   font-size: 1.5rem;
   letter-spacing: 3px;
@@ -264,16 +266,11 @@ header .dropdown .menu-indice .dropdown-item:hover {
   }
 }
 /* El título de más vendidos */
-.mas-vendidos h3 {
-  margin-top: 20px;
-}
-
 /* El orden de los productos y la disposición de los productos */
 .mas-vendidos .best-sellers {
   display: flex;
   justify-content: space-evenly;
   flex-wrap: wrap;
-  margin: 15px;
   /* El borde, el background, el padding de cada producto y una transición */
 }
 .mas-vendidos .best-sellers .productos {
@@ -282,29 +279,14 @@ header .dropdown .menu-indice .dropdown-item:hover {
   align-items: center;
   border: 0.8px solid white;
   border-radius: 8px;
-  padding: 10px 10px 2px 10px;
+  margin: 10px 0;
+  padding: 5px 10px 2px 10px;
   transition: all 0.2s ease-in-out;
   box-shadow: 1px 1px 5px 0 rgba(0, 0, 0, 0.5);
   /* Para sacarle el subrayado y el azul a los links */
   /* Para que cambie de color al pasar el mouse por encima y se escale */
   /* Mobile */
   /* Tablet */
-}
-@keyframes fadeInUp {
-  from {
-    opacity: 0;
-    -webkit-transform: translate3d(0, 100%, 0);
-    transform: translate3d(0, 100%, 0);
-  }
-  to {
-    opacity: 1;
-    -webkit-transform: translate3d(0, 0, 0);
-    transform: translate3d(0, 0, 0);
-  }
-}
-.mas-vendidos .best-sellers .productos .animate__fadeInUp {
-  -webkit-animation-name: fadeInUp;
-  animation-name: fadeInUp;
 }
 .mas-vendidos .best-sellers .productos a {
   text-decoration: none;
@@ -340,30 +322,35 @@ header .dropdown .menu-indice .dropdown-item:hover {
   }
 }
 
-/* El título de acerca de nosotros */
-/* La caja que contiene la imagen y el párrafo */
+/* La caja que contiene la imagen, el título y el párrafo */
 .contenedor-nosotros {
   width: 100%;
   height: 400px;
   position: relative;
-  /* El tamaño y la transparencia de la imagen */
+  margin-top: 20px;
+  /* El tamaño y la posición de la imagen */
+  /* El título de "Nosotros" */
   /* El estilo, la tipografía y la ubicación del texto */
 }
 .contenedor-nosotros img {
   position: absolute;
   width: 100%;
   height: 100%;
-  opacity: 0.8;
+}
+.contenedor-nosotros h2 {
+  position: relative;
+  text-shadow: 2px 1px black;
 }
 .contenedor-nosotros .parrafo-nosotros {
-  color: black;
+  color: white;
   font-family: "Source Sans Pro", sans-serif;
   position: absolute;
   font-style: italic;
   text-align: justify;
   font-size: 1.2rem;
-  padding: 40px 70px 60px 70px;
-  text-shadow: 2px 1px #828282;
+  padding: 0px 70px;
+  text-shadow: 2px 1px black;
+  /* Un link para la sección de Conciencia */
   /* Mobile */
   /* Tablet */
 }
@@ -372,24 +359,26 @@ header .dropdown .menu-indice .dropdown-item:hover {
   color: #FF3B3F;
 }
 .contenedor-nosotros .parrafo-nosotros a:hover {
-  color: white;
+  color: black;
 }
 @media screen and (max-width: 576px) {
   .contenedor-nosotros .parrafo-nosotros {
-    padding: 10px 15px;
+    padding: 0px 15px;
     font-size: 0.8rem;
   }
 }
 @media screen and (min-width: 576px) and (max-width: 992px) {
   .contenedor-nosotros .parrafo-nosotros {
-    padding: 60px 40px;
-    font-size: 0.85rem;
+    padding: 0px 40px;
+    font-size: 0.9rem;
   }
 }
 
 /* Fondo del footer con gradiente lineal */
 footer {
   background-color: #3B3B3B;
+  border: 1px solid black;
+  box-shadow: 1px -1px 5px 0 rgba(0, 0, 0, 0.5);
   /* Ubicación de Logo, Redes y Contacto */
   /* Derechos reservados */
 }
@@ -426,7 +415,8 @@ footer .menu-redes .redes {
   display: flex;
   justify-content: space-evenly;
   padding-top: 15px;
-  padding-right: 200px;
+  padding-left: 0;
+  padding-right: auto;
   flex-grow: 1;
   /* El "relleno" de los links, para que el hover quede más prolijo y para espaciarlos entre sí */
   /* Mobile */
@@ -452,7 +442,8 @@ footer .menu-redes .redes a img {
 @media screen and (min-width: 576px) and (max-width: 992px) {
   footer .menu-redes .redes {
     padding-top: 15px;
-    padding-left: 20px;
+    padding-left: 15px;
+    width: 50px;
     padding-right: unset;
     display: flex;
     flex-direction: column;
@@ -466,6 +457,7 @@ footer .menu-redes .contacto {
   text-align: right;
   padding-right: 15px;
   padding-top: 15px;
+  padding-left: 0;
   /* Cuando se pasa el cursor por encima de contacto */
   /* Mobile */
 }
