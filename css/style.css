@@ -318,7 +318,7 @@ header .dropdown .menu-indice .dropdown-item:hover {
 }
 @media screen and (max-width: 576px) {
   #mas-vendidos .best-sellers .productos {
-    margin: 15px 10px;
+    margin: 25px 10px;
   }
 }
 @media screen and (min-width: 576px) and (max-width: 992px) {
@@ -421,6 +421,7 @@ footer .menu-redes .logo-marron {
 @media screen and (max-width: 576px) {
   footer .menu-redes .logo-marron {
     padding-bottom: 20px;
+    padding-right: 0;
     margin: 0 100px;
   }
 }
