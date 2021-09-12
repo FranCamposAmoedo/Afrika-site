@@ -1,7 +1,7 @@
 {
-  "name": "poyecto",
+  "name": "Afrika",
   "version": "1.0.0",
-  "description": "<h1 align=\"center\">Hi 👋, I'm Francisco Campos Amoedo</h1>\r <h3 align=\"center\">A passionate frontend student from Argentina</h3>",
+  "description": "Tienda de de Accesorios de Madera",
   "main": "index.js",
   "dependencies": {
     "aos": "^2.3.4",
@@ -15,7 +15,10 @@
     "type": "git",
     "url": "git+https://github.com/FranCamposAmoedo/Afrika-site.git"
   },
-  "author": "",
+  "author": {
+    "name": "Francisco Campos",
+    "email": "francisco.campos.amoedo@gmail.com"
+  },
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/FranCamposAmoedo/Afrika-site/issues"

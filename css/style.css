@@ -39,7 +39,7 @@ html {
   font-weight: 700;
   word-spacing: 5px;
   letter-spacing: 1px;
-  text-shadow: 2px 1px #828282;
+  text-shadow: 2px 1px #56596c;
 }
 
 /* Propiedades que se repiten en las background-image de los productos */
@@ -50,9 +50,9 @@ html {
 
 /* Propiedades de los botones de los productos */
 .seccion-productos .cartas-productos .botones-productos {
-  color: #828282;
+  color: #56596c;
   background-color: white;
-  border-color: #828282;
+  border-color: #56596c;
 }
 
 /* Propiedades de los botones cuando pasa el mouse por encima */
@@ -100,7 +100,7 @@ header img {
   margin: 0 10px;
 }
 header h1 {
-  color: #828282;
+  color: #56596c;
   font-family: "Montserrat", sans-serif;
   font-size: 2.5rem;
   font-weight: 600;
@@ -115,7 +115,7 @@ header .dropdown {
 }
 header .dropdown a {
   background-color: white;
-  color: #828282;
+  color: #56596c;
   font-family: "Montserrat", sans-serif;
   border: unset;
   /* El fondo cuando se pasa por encima del los elementos del menú */
@@ -226,7 +226,7 @@ header .dropdown .menu-indice .dropdown-item:hover {
   color: #FF3B3F;
   font-family: "Roboto", sans-serif;
   text-decoration: none;
-  text-shadow: 2px 1px #828282;
+  text-shadow: 2px 1px #56596c;
   margin: 20px 0;
   font-size: 1.5rem;
   letter-spacing: 3px;
