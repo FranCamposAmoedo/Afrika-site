@@ -147,6 +147,12 @@ header .dropdown .menu-indice .dropdown-item:hover {
   /* El querry para Tablet */
   /* Para que el carousel ocupe toda la pantalla en Mobile y Tablet*/
 }
+#inicio #carouselExampleCaptions {
+  /* La ubicación del botón para cambiar de imagen */
+}
+#inicio #carouselExampleCaptions .carousel-inner .carousel-item {
+  /* Font y shadow en el texto del carousel */
+}
 #inicio #carouselExampleCaptions .carousel-inner .carousel-item img {
   width: 80%;
   margin: 0 auto;
@@ -154,6 +160,7 @@ header .dropdown .menu-indice .dropdown-item:hover {
 #inicio #carouselExampleCaptions .carousel-inner .carousel-item div {
   font-family: "Montserrat", sans-serif;
   text-shadow: 2px 1px black;
+  /* El estilo, color y tamaño del link */
 }
 #inicio #carouselExampleCaptions .carousel-inner .carousel-item div p a {
   text-decoration: none;
@@ -179,6 +186,9 @@ header .dropdown .menu-indice .dropdown-item:hover {
   }
 }
 @media screen and (max-width: 996px) {
+  #inicio #carouselExampleCaptions {
+    /* La ubicación del botón para cambiar de imagen */
+  }
   #inicio #carouselExampleCaptions .carousel-inner .carousel-item img {
     margin: 0;
     width: 100%;
@@ -188,6 +198,7 @@ header .dropdown .menu-indice .dropdown-item:hover {
   }
 }
 
+/* El fondo del contenedor */
 .video-parrafo {
   background-color: #EAEDED;
   margin: 10px 0;

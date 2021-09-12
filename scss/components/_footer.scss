@@ -32,8 +32,7 @@ footer {
 
         /* El título de las secciones del Footer */
         h4 {
-            color: nth($color-list, 1);
-            font-family: nth($font-list, 1);
+            @include parametros-font-color (nth($color-list , 1), nth($font-list , 1));
             font-size: 1.25rem;
         }
 
@@ -68,8 +67,7 @@ footer {
         /* Para sacarle el subrayado y el azul a los links. Estilo, color y font */
         a {
             text-decoration: none;
-            color: nth($color-list, 5);
-            font-family: nth($font-list, 1);
+            @include parametros-font-color (nth($color-list , 5), nth($font-list , 1));
             font-size: 0.8rem;
 
             /* Cuando se pasa el cursor por encima de los íconos */
