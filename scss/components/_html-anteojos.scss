@@ -33,7 +33,7 @@
 
     /* La posición de las cards */
     .cartas-productos {
-        @include parametros-display (center);
+        @include parametros-display (center, row);
         flex-wrap: wrap;
         
 

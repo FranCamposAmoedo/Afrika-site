@@ -27,7 +27,7 @@
 
         /* Link para entrar en la sección conciencia global y una transición */
         a {
-            @include parametros-display (center);
+            @include parametros-display (center, row);
             text-align: center;
             @include parametros-font-color (nth($color-list, 1), nth($font-list, 2));
             text-decoration: none;
@@ -72,7 +72,7 @@
 /* Mobile y Tablet */
 @media screen and (max-width: 992px) {
     .video-parrafo {
-        @include parametros-display (center);
+        @include parametros-display (center, row);
         flex-wrap: wrap;
         align-self: center;
     }

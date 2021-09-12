@@ -5,13 +5,13 @@
     /* Tipografía, tamaño, color, estilos y disposición de los bloques (imagen más párrafo) */
     .conciencia-1,
     .conciencia-3 {
-        @include parametros-display (space-between);
+        @include parametros-display (space-between, row);
         @include parametros-font-color (nth($color-list , 3), nth($font-list , 3));
         @extend %ext-parrafos-conciencia;
 
         /* Mobile y Tablet */
         @media screen and (max-width: 992px) {
-            @include parametros-display (center);
+            @include parametros-display (center, row);
             flex-wrap: wrap;
         }
 
@@ -30,14 +30,14 @@
 
     /* Tipografía, tamaño, color, estilos y disposición de los bloques (imagen más párrafo) */
     .conciencia-2 {
-        @include parametros-display (space-between);
+        @include parametros-display (space-between, row);
         @include parametros-font-color (nth($color-list , 3), nth($font-list , 3));
         @extend %ext-parrafos-conciencia;
         flex-direction: row-reverse;
 
         /* Mobile y Tablet */
         @media screen and (max-width: 992px) {
-            @include parametros-display (center);
+            @include parametros-display (center, row);
             flex-wrap: wrap;
         }
 

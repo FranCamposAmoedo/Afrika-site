@@ -1,16 +1,16 @@
 /* El título de más vendidos */
-.mas-vendidos h2 {
+#mas-vendidos h2 {
     @extend %font-h2;
 }
 
 /* El orden de los productos y la disposición de los productos */
-.mas-vendidos .best-sellers {
-    @include parametros-display (space-evenly);
+#mas-vendidos .best-sellers {
+    @include parametros-display (space-evenly, row);
     flex-wrap: wrap;
 
     /* El borde, el background, el padding de cada producto y una transición */
     .productos {
-        @include parametros-display (space-evenly);
+        @include parametros-display (space-evenly, row);
         align-items: center;
         border: 0.8px solid nth($color-list, 4);
         border-radius: 8px;

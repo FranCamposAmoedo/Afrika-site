@@ -1,6 +1,6 @@
 /* Disposición de los elementos del Header, el color del fondo, la posición fija y el borde */
 header {
-    @include parametros-display (space-between);
+    @include parametros-display (space-between, row);
     align-items: center;
     background-color: nth($color-list, 4);
     opacity: 0.9;
@@ -54,8 +54,7 @@ header {
 
     /* El querry para Mobile */
     @media screen and (max-width: 576px) {
-        @include parametros-display (center);
-        flex-direction: column;
+        @include parametros-display (center, column);
         position: relative;
 
         .dropdown {

@@ -1,21 +1,62 @@
-/* Fondo del footer con gradiente lineal */
+/* Fondo del footer con box shadow */
 footer {
     background-color: nth($color-list, 6);
     border: $borde-normal;
     box-shadow: 1px -1px 5px 0 rgb(0 0 0 / 50%);
 
-    /* Ubicación de Logo, Redes y Contacto */
+    /* Ubicación de Logo, Nuestro contenido, Redes y Contacto */
     .menu-redes {
-        @include parametros-display (space-between);
+        @include parametros-display (space-between, row);
         flex-wrap: wrap;
-        align-items: center;
+        align-items: flex-start;
         width: 100%;
+        padding: 20px 15px 0 15px;
 
         /* El tamaño y la ubicación del Logo */
         .logo-marron {
             width: 100px;
-            padding-left: 15px;
-            padding-top: 15px;
+            padding-right: 20px;
+
+            /* Tablet */
+            @media screen and (min-width: 576px) and (max-width: 1062px) {
+                padding-top: 30px;
+            }
+
+            /* Mobile */
+            @media screen and (max-width: 576px) {
+                padding-bottom: 20px;
+                margin: 0 100px;
+            }
+        }
+
+        /* El título de las secciones del Footer */
+        h4 {
+            color: nth($color-list, 1);
+            font-family: nth($font-list, 1);
+            font-size: 1.25rem;
+        }
+
+        /* Un menú para los links a diferentes sectores del sitio */
+        .nuestro-contenido {
+            @include parametros-display (center, column);
+            padding: 0 10px;
+
+            /* Para sacarle el padding q trae por defecto */
+            ul {
+                padding-left: 0;
+
+                /* Tablet */
+                @media screen and (min-width: 576px) and (max-width: 1062px) {
+                    @include parametros-display (center, column);
+                    align-items: center;
+                }
+
+                /* Mobile */
+                @media screen and (max-width: 576px) {
+                    @include parametros-display (center, column);
+                    align-items: center;
+                }
+            }
         }
 
         /* Para sacarle las viñetas a la lista */
@@ -23,10 +64,12 @@ footer {
             list-style: none;
         }
 
-        /* Para sacarle el subrayado y el azul a los links */
+        /* Para sacarle el subrayado y el azul a los links. Estilo, color y font */
         a {
             text-decoration: none;
             color: nth($color-list, 5);
+            font-family: nth($font-list, 1);
+            font-size: 0.8rem;
 
             /* Cuando se pasa el cursor por encima de los íconos */
             &:hover {
@@ -34,9 +77,16 @@ footer {
             }
         }
 
+        /* El contenedor de las redes sociales */
+        .redes-sociales {
+            @include parametros-display (center, column);
+            align-items: center;
+            padding: 0 10px;
+        }
+
         /* La disposición de los iconos de redes */
         .redes {
-            @include parametros-display (space-evenly);
+            @include parametros-display (space-evenly, row);
             padding-top: 15px;
             padding-left: 0;
             padding-right: auto;
@@ -62,27 +112,31 @@ footer {
                 padding-top: 10px;
                 padding-right: 0px;
             }
+        }
+
+        /* El contenedor de contactanos */
+        .contactenos {
+            @include parametros-display (center, column);
+            align-items: flex-end;
+            padding-left: 5px;
 
             /* Tablet */
-            @media screen and (min-width: 576px) and (max-width: 992px) {
-                padding-top: 15px;
-                padding-left: 15px;
-                width: 50px;
-                padding-right: unset;
-                display: flex;
-                flex-direction: column;
-                flex-grow: 1;
+            @media screen and (min-width: 576px) and (max-width: 1062px) {
+                align-items: center;
+            }
+
+            /* Mobile */
+            @media screen and (max-width: 576px) {
+                align-items: center;
             }
         }
 
         /* El estilo y la disposición de contacto */
         .contacto {
-            font-family: nth($font-list, 2);
+            font-family: nth($font-list, 1);
             font-weight: normal;
-            font-size: 1rem;
+            font-size: 0.8rem;
             text-align: right;
-            padding-right: 15px;
-            padding-top: 15px;
             padding-left: 0;
 
             /* Cuando se pasa el cursor por encima de contacto */
@@ -95,13 +149,22 @@ footer {
             /* Mobile */
             @media screen and (max-width: 576px) {
                 text-align: center;
-                padding: 15px;
             }
+
+            /* Tablet */
+            @media screen and (min-width: 576px) and (max-width: 1062px) {
+                text-align: center;
+            }
+        }
+
+        /* Tablet */
+        @media screen and (min-width: 576px) and (max-width: 1062px) {
+            @include parametros-display (center, row);
         }
 
         /* Mobile */
         @media screen and (max-width: 576px) {
-            @include parametros-display (center);
+            @include parametros-display (center, row);
             align-items: center;
         }
     }

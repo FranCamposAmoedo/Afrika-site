@@ -28,7 +28,7 @@ html {
 /* Lista de Paleta de Colores */
 /* Lista de Fuentes */
 /* Propiedades que se repiten en los dos H3 */
-.contenedor-nosotros h2, .mas-vendidos h2 {
+.contenedor-nosotros h2, #mas-vendidos h2 {
   height: 80px;
   color: #FF3B3F;
   font-family: "Montserrat", sans-serif;
@@ -79,6 +79,7 @@ html {
 header {
   display: flex;
   justify-content: space-between;
+  flex-direction: row;
   align-items: center;
   background-color: white;
   opacity: 0.9;
@@ -220,6 +221,7 @@ header .dropdown .menu-indice .dropdown-item:hover {
 .video-parrafo .link-conciencia a {
   display: flex;
   justify-content: center;
+  flex-direction: row;
   text-align: center;
   color: #FF3B3F;
   font-family: "Roboto", sans-serif;
@@ -261,21 +263,24 @@ header .dropdown .menu-indice .dropdown-item:hover {
   .video-parrafo {
     display: flex;
     justify-content: center;
+    flex-direction: row;
     flex-wrap: wrap;
     align-self: center;
   }
 }
 /* El título de más vendidos */
 /* El orden de los productos y la disposición de los productos */
-.mas-vendidos .best-sellers {
+#mas-vendidos .best-sellers {
   display: flex;
   justify-content: space-evenly;
+  flex-direction: row;
   flex-wrap: wrap;
   /* El borde, el background, el padding de cada producto y una transición */
 }
-.mas-vendidos .best-sellers .productos {
+#mas-vendidos .best-sellers .productos {
   display: flex;
   justify-content: space-evenly;
+  flex-direction: row;
   align-items: center;
   border: 0.8px solid white;
   border-radius: 8px;
@@ -288,36 +293,36 @@ header .dropdown .menu-indice .dropdown-item:hover {
   /* Mobile */
   /* Tablet */
 }
-.mas-vendidos .best-sellers .productos a {
+#mas-vendidos .best-sellers .productos a {
   text-decoration: none;
   color: black;
   /* El tamaño y el color de fondo de las imagenes */
   /* El estilo, color y ubicación del texto */
 }
-.mas-vendidos .best-sellers .productos a .imagen {
+#mas-vendidos .best-sellers .productos a .imagen {
   width: 200px;
   height: 170px;
   border-radius: 12px 12px 0 0;
 }
-.mas-vendidos .best-sellers .productos a p {
+#mas-vendidos .best-sellers .productos a p {
   color: black;
   font-family: "Source Sans Pro", sans-serif;
   margin-top: 1.2rem;
   text-align: center;
   font-size: 0.8rem;
 }
-.mas-vendidos .best-sellers .productos:hover {
+#mas-vendidos .best-sellers .productos:hover {
   background-color: #FF3B3F;
   border: 1px solid black;
   transform: scale(1.04);
 }
 @media screen and (max-width: 576px) {
-  .mas-vendidos .best-sellers .productos {
+  #mas-vendidos .best-sellers .productos {
     margin: 15px 10px;
   }
 }
 @media screen and (min-width: 576px) and (max-width: 992px) {
-  .mas-vendidos .best-sellers .productos {
+  #mas-vendidos .best-sellers .productos {
     margin: 30px 20px;
   }
 }
@@ -374,31 +379,83 @@ header .dropdown .menu-indice .dropdown-item:hover {
   }
 }
 
-/* Fondo del footer con gradiente lineal */
+/* Fondo del footer con box shadow */
 footer {
   background-color: #3B3B3B;
   border: 1px solid black;
   box-shadow: 1px -1px 5px 0 rgba(0, 0, 0, 0.5);
-  /* Ubicación de Logo, Redes y Contacto */
+  /* Ubicación de Logo, Nuestro contenido, Redes y Contacto */
   /* Derechos reservados */
 }
 footer .menu-redes {
   display: flex;
   justify-content: space-between;
+  flex-direction: row;
   flex-wrap: wrap;
-  align-items: center;
+  align-items: flex-start;
   width: 100%;
+  padding: 20px 15px 0 15px;
   /* El tamaño y la ubicación del Logo */
+  /* El título de las secciones del Footer */
+  /* Un menú para los links a diferentes sectores del sitio */
   /* Para sacarle las viñetas a la lista */
-  /* Para sacarle el subrayado y el azul a los links */
+  /* Para sacarle el subrayado y el azul a los links. Estilo, color y font */
+  /* El contenedor de las redes sociales */
   /* La disposición de los iconos de redes */
+  /* El contenedor de contactanos */
   /* El estilo y la disposición de contacto */
+  /* Tablet */
   /* Mobile */
 }
 footer .menu-redes .logo-marron {
   width: 100px;
-  padding-left: 15px;
-  padding-top: 15px;
+  padding-right: 20px;
+  /* Tablet */
+  /* Mobile */
+}
+@media screen and (min-width: 576px) and (max-width: 1062px) {
+  footer .menu-redes .logo-marron {
+    padding-top: 30px;
+  }
+}
+@media screen and (max-width: 576px) {
+  footer .menu-redes .logo-marron {
+    padding-bottom: 20px;
+    margin: 0 100px;
+  }
+}
+footer .menu-redes h4 {
+  color: #FF3B3F;
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.25rem;
+}
+footer .menu-redes .nuestro-contenido {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  padding: 0 10px;
+  /* Para sacarle el padding q trae por defecto */
+}
+footer .menu-redes .nuestro-contenido ul {
+  padding-left: 0;
+  /* Tablet */
+  /* Mobile */
+}
+@media screen and (min-width: 576px) and (max-width: 1062px) {
+  footer .menu-redes .nuestro-contenido ul {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+@media screen and (max-width: 576px) {
+  footer .menu-redes .nuestro-contenido ul {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+  }
 }
 footer .menu-redes ul {
   list-style: none;
@@ -406,21 +463,30 @@ footer .menu-redes ul {
 footer .menu-redes a {
   text-decoration: none;
   color: #deb887;
+  font-family: "Montserrat", sans-serif;
+  font-size: 0.8rem;
   /* Cuando se pasa el cursor por encima de los íconos */
 }
 footer .menu-redes a:hover {
   background-color: #FF3B3F;
 }
+footer .menu-redes .redes-sociales {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  padding: 0 10px;
+}
 footer .menu-redes .redes {
   display: flex;
   justify-content: space-evenly;
+  flex-direction: row;
   padding-top: 15px;
   padding-left: 0;
   padding-right: auto;
   flex-grow: 1;
   /* El "relleno" de los links, para que el hover quede más prolijo y para espaciarlos entre sí */
   /* Mobile */
-  /* Tablet */
 }
 footer .menu-redes .redes a {
   padding: 20px;
@@ -439,27 +505,34 @@ footer .menu-redes .redes a img {
     padding-right: 0px;
   }
 }
-@media screen and (min-width: 576px) and (max-width: 992px) {
-  footer .menu-redes .redes {
-    padding-top: 15px;
-    padding-left: 15px;
-    width: 50px;
-    padding-right: unset;
-    display: flex;
-    flex-direction: column;
-    flex-grow: 1;
+footer .menu-redes .contactenos {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: flex-end;
+  padding-left: 5px;
+  /* Tablet */
+  /* Mobile */
+}
+@media screen and (min-width: 576px) and (max-width: 1062px) {
+  footer .menu-redes .contactenos {
+    align-items: center;
+  }
+}
+@media screen and (max-width: 576px) {
+  footer .menu-redes .contactenos {
+    align-items: center;
   }
 }
 footer .menu-redes .contacto {
-  font-family: "Roboto", sans-serif;
+  font-family: "Montserrat", sans-serif;
   font-weight: normal;
-  font-size: 1rem;
+  font-size: 0.8rem;
   text-align: right;
-  padding-right: 15px;
-  padding-top: 15px;
   padding-left: 0;
   /* Cuando se pasa el cursor por encima de contacto */
   /* Mobile */
+  /* Tablet */
 }
 footer .menu-redes .contacto a:hover {
   background-color: #FF3B3F;
@@ -467,13 +540,25 @@ footer .menu-redes .contacto a:hover {
 @media screen and (max-width: 576px) {
   footer .menu-redes .contacto {
     text-align: center;
-    padding: 15px;
+  }
+}
+@media screen and (min-width: 576px) and (max-width: 1062px) {
+  footer .menu-redes .contacto {
+    text-align: center;
+  }
+}
+@media screen and (min-width: 576px) and (max-width: 1062px) {
+  footer .menu-redes {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
   }
 }
 @media screen and (max-width: 576px) {
   footer .menu-redes {
     display: flex;
     justify-content: center;
+    flex-direction: row;
     align-items: center;
   }
 }
@@ -498,6 +583,7 @@ footer .derechos {
 .conciencia .conciencia-3 {
   display: flex;
   justify-content: space-between;
+  flex-direction: row;
   color: black;
   font-family: "Source Sans Pro", sans-serif;
   /* Mobile y Tablet */
@@ -508,6 +594,7 @@ footer .derechos {
 .conciencia .conciencia-3 {
     display: flex;
     justify-content: center;
+    flex-direction: row;
     flex-wrap: wrap;
   }
 }
@@ -526,6 +613,7 @@ footer .derechos {
 .conciencia .conciencia-2 {
   display: flex;
   justify-content: space-between;
+  flex-direction: row;
   color: black;
   font-family: "Source Sans Pro", sans-serif;
   flex-direction: row-reverse;
@@ -536,6 +624,7 @@ footer .derechos {
   .conciencia .conciencia-2 {
     display: flex;
     justify-content: center;
+    flex-direction: row;
     flex-wrap: wrap;
   }
 }
@@ -601,6 +690,7 @@ footer .derechos {
 .seccion-productos .cartas-productos {
   display: flex;
   justify-content: center;
+  flex-direction: row;
   flex-wrap: wrap;
   /* Para hacer negrita los titulos */
   /* La justificación del texto */
@@ -655,6 +745,7 @@ footer .derechos {
 .seccion-productos .cartas-productos {
   display: flex;
   justify-content: center;
+  flex-direction: row;
   flex-wrap: wrap;
   /* Para hacer negrita los titulos */
   /* La justificación del texto */

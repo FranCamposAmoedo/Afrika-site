@@ -1,7 +1,8 @@
 /* Para simplificar cuando aparecen juntos */
-@mixin parametros-display ($align) {
+@mixin parametros-display ($align, $direction) {
     display: flex;
     justify-content: $align;
+    flex-direction: $direction;
 }
 
 /* Dos parametros que aparecen casi siempre juntos */
