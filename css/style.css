@@ -523,15 +523,9 @@ footer .menu-redes .contactenos {
   flex-direction: column;
   align-items: flex-end;
   padding-left: 5px;
-  /* Tablet */
-  /* Mobile */
+  /* Tablet y Mobile */
 }
-@media screen and (min-width: 576px) and (max-width: 1062px) {
-  footer .menu-redes .contactenos {
-    align-items: center;
-  }
-}
-@media screen and (max-width: 576px) {
+@media screen and (max-width: 1062px) {
   footer .menu-redes .contactenos {
     align-items: center;
   }
@@ -543,18 +537,12 @@ footer .menu-redes .contacto {
   text-align: right;
   padding-left: 0;
   /* Cuando se pasa el cursor por encima de contacto */
-  /* Mobile */
-  /* Tablet */
+  /* Mobile y Tablet*/
 }
 footer .menu-redes .contacto a:hover {
   background-color: #FF3B3F;
 }
-@media screen and (max-width: 576px) {
-  footer .menu-redes .contacto {
-    text-align: center;
-  }
-}
-@media screen and (min-width: 576px) and (max-width: 1062px) {
+@media screen and (max-width: 1062px) {
   footer .menu-redes .contacto {
     text-align: center;
   }
@@ -716,7 +704,7 @@ footer .derechos {
 }
 .seccion-productos .cartas-productos .parrafos-productos div strong {
   margin: 10px 0;
-  text-decoration: u;
+  text-decoration: none;
 }
 .seccion-productos .cartas-productos .parrafos-productos div p {
   margin-bottom: 5px;

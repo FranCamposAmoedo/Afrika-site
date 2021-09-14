@@ -119,13 +119,8 @@ footer {
             align-items: flex-end;
             padding-left: 5px;
 
-            /* Tablet */
-            @media screen and (min-width: 576px) and (max-width: 1062px) {
-                align-items: center;
-            }
-
-            /* Mobile */
-            @media screen and (max-width: 576px) {
+            /* Tablet y Mobile */
+            @media screen and (max-width: 1062px) {
                 align-items: center;
             }
         }
@@ -145,13 +140,8 @@ footer {
                 }
             }
 
-            /* Mobile */
-            @media screen and (max-width: 576px) {
-                text-align: center;
-            }
-
-            /* Tablet */
-            @media screen and (min-width: 576px) and (max-width: 1062px) {
+            /* Mobile y Tablet*/
+            @media screen and (max-width: 1062px) {
                 text-align: center;
             }
         }
