@@ -600,8 +600,15 @@ footer .derechos {
 }
 .conciencia .conciencia-1 .parrafo-conciencia,
 .conciencia .conciencia-3 .parrafo-conciencia {
-  margin-right: 70px;
+  margin-right: 170px;
+  /* Desktops con resoluciones bajas */
   /* Mobile y Tablet */
+}
+@media screen and (min-width: 992px) and (max-width: 1600px) {
+  .conciencia .conciencia-1 .parrafo-conciencia,
+.conciencia .conciencia-3 .parrafo-conciencia {
+    margin: 70px;
+  }
 }
 @media screen and (max-width: 992px) {
   .conciencia .conciencia-1 .parrafo-conciencia,
@@ -629,8 +636,14 @@ footer .derechos {
   }
 }
 .conciencia .conciencia-2 .parrafo-conciencia {
-  margin-left: 70px;
+  margin-left: 170px;
+  /* Desktops con resoluciones bajas */
   /* Mobile y Tablet */
+}
+@media screen and (min-width: 992px) and (max-width: 1600px) {
+  .conciencia .conciencia-2 .parrafo-conciencia {
+    margin: 70px;
+  }
 }
 @media screen and (max-width: 992px) {
   .conciencia .conciencia-2 .parrafo-conciencia {
