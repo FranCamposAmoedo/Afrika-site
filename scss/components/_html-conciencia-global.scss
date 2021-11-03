@@ -18,7 +18,12 @@
 
         /* Márgen para que los textos queden centrados */
         .parrafo-conciencia {
-            margin-right: 70px;
+            margin-right: 170px;
+            
+            /* Desktops con resoluciones bajas */
+            @media screen and (min-width: 992px) and (max-width: 1600px) {
+                margin: 70px;
+            }
 
             /* Mobile y Tablet */
             @media screen and (max-width: 992px) {
@@ -43,7 +48,12 @@
 
         /* Márgen para que los textos queden centrados */
         .parrafo-conciencia {
-            margin-left: 70px;
+            margin-left: 170px;
+            
+            /* Desktops con resoluciones bajas */
+            @media screen and (min-width: 992px) and (max-width: 1600px) {
+                margin: 70px;
+            }
 
             /* Mobile y Tablet */
             @media screen and (max-width: 992px) {
